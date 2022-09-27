@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+  node:
+    image: node:18.9-alpine3.16
+    volumes:
+      - ./:/var/www/project
+    command: tail -f /dev/null
+    working_dir: /var/www/project
